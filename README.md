@@ -1,12 +1,14 @@
 # redux-persist-encrypted-storage
 
-Well known and trusted [React Native Encrypted Storage](https://www.npmjs.com/package/react-native-encrypted-storage) based  [redux-persist](https://github.com/rt2zz/redux-persist) Storage Engine.
+Well known and trusted [React Native Encrypted Storage](https://www.npmjs.com/package/react-native-encrypted-storage) based [redux-persist](https://github.com/rt2zz/redux-persist) Storage Engine.
 
 This library is using the well known and trusted `React Native Encrypted Storage` library under the hood to store your data in a secure way. According to the developers, react native encrypted storage uses a wrapper around Android's `EncryptedSharedPreferences` and iOS' `Keychain` and developed with the support for TypeScript.
 
 ## Installation
 
-This library will install the `react-native-encrypted-storage` library as a dependency.
+Ensure to install the `react-native-encrypted-storage` library as a dependency. [Check the installation guide](https://github.com/emeraldsanto/react-native-encrypted-storage#installation).
+
+And also install the `redux-persist-encrypted-storage` library.
 
 ```bash
 yarn add redux-persist-encrypted-storage
@@ -19,14 +21,14 @@ npm install --save redux-persist-encrypted-storage
 #### Use as a `redux-persist` global storage engine:
 
 ```js
-import createSecuredStore from "redux-persist-encrypted-storage";
+import createSecuredStorage from "redux-persist-encrypted-storage";
 
 import { createStore } from "redux";
 import { persistStore, persistCombineReducers } from "redux-persist";
 import reducers from "./reducers";
 
 // Secured storage
-const secureStorage = createSecuredStore();
+const secureStorage = createSecuredStorage();
 
 const config = {
   key: "encrypted",
@@ -47,16 +49,16 @@ function configureStore() {
 #### Use as a separate engine for a subset of your reducers:
 
 ```js
-import createSecuredStore from "redux-persist-encrypted-storage";
+import createSecuredStorage from "redux-persist-encrypted-storage";
 
 import { combineReducers } from "redux";
 import { persistReducer } from "redux-persist";
-import AsyncStorage from "redux-persist/lib/storage";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import { mainReducers, securedReducers } from "./reducers";
 
 // Secure storage configurations
-const secureStorage = createSecuredStore();
+const secureStorage = createSecuredStorage();
 const securePersistConfig = {
   key: "secure",
   storage: secureStorage
@@ -84,7 +86,7 @@ function configureStore() {
 
 ## Caveat
 
-Keys for the Encrypted Storage only support `[A-Za-z0-9.-_]`, meaning all other characters are replaced by an internal `replaceCharacter` function (defaults to `_`).
+Keys for the Encrypted Storage only support `[A-Za-z0-9.-_]`, meaning all other characters are replaced by an internal `replacer` function (defaults to `_`).
 
 ## Note
 
