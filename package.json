@@ -7,6 +7,22 @@
   "repository": "https://github.com/samitha9125/redux-persist-encrypted-storage.git",
   "author": "Samitha Nanayakkara",
   "license": "MIT",
+  "keywords": [
+    "redux-persist",
+    "redux",
+    "encrypted-storage",
+    "encrypted",
+    "react-native",
+    "secure-storage",
+    "persisting",
+    "persisting-data",
+    "redux-persist-storage",
+    "react-native-storage",
+    "storage",
+    "persistent",
+    "offline",
+    "offline-storage"
+  ],
   "scripts": {
     "format": "prettier --write 'src/**/*.{js,ts}' package.json README.md",
     "deploy": "npm version patch && npm pack && npm publish"
