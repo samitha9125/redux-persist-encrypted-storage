@@ -1,5 +1,4 @@
 declare module "redux-persist-encrypted-storage" {
-
   export interface ReduxPersistSectoredStorage {
     getItem(key: string): Promise<void>;
 
