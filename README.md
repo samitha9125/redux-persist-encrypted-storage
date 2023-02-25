@@ -1,7 +1,5 @@
 # redux-persist-encrypted-storage
-[![Maintainability](https://api.codeclimate.com/v1/badges/e700ec33f7251abe0266/maintainability)](https://codeclimate.com/github/samitha9125/redux-persist-encrypted-storage/maintainability)
-
-[![Known Vulnerabilities](https://snyk.io/test/github/samitha9125/redux-persist-encrypted-storage/badge.svg)](https://snyk.io/test/github/samitha9125/redux-persist-encrypted-storage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/e700ec33f7251abe0266/maintainability)](https://codeclimate.com/github/samitha9125/redux-persist-encrypted-storage/maintainability) [![Known Vulnerabilities](https://snyk.io/test/github/samitha9125/redux-persist-encrypted-storage/badge.svg)](https://snyk.io/test/github/samitha9125/redux-persist-encrypted-storage)
 
 Well known and trusted [React Native Encrypted Storage](https://www.npmjs.com/package/react-native-encrypted-storage) based [redux-persist](https://github.com/rt2zz/redux-persist) Storage Engine.
 
