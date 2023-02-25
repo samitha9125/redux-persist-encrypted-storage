@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "format": "prettier --write 'src/**/*.{js,ts}' package.json README.md",
-    "deploy": "npm version && npm pack && npm publish"
+    "deploy": "npm version patch && npm pack && npm publish"
   },
   "peerDependencies": {
     "react-native-encrypted-storage": "*"
