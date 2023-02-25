@@ -1,6 +1,6 @@
 {
   "name": "redux-persist-encrypted-storage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Redux Persist storage for React Native Encrypted Storage",
   "main": "src/index.js",
   "types": "src/index.d.ts",
